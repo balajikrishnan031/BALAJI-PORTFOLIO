@@ -183,7 +183,7 @@
                     </ul>
                 </div>
                 <div class="project-imagery">
-                    <img src="https://images.unsplash.com/photo-1551076805-e18690c5e561?w=800&q=80" alt="Hospital Tech Concept" class="img-main">
+                    <img src="https://images.unsplash.com/photo-1530497610245-94d3c16cda28?w=800&q=80" alt="Hospital Tech Concept" class="img-main">
                     <img src="https://images.unsplash.com/photo-1512314889357-e157c22f938d?w=600&q=80" alt="Notes and code" class="img-offset">
                 </div>
             </div>
@@ -293,22 +293,29 @@
                 <h3 style="font-size: 2rem; margin-bottom: 2rem; color: var(--dark-green); text-align: center;">Certificate Gallery</h3>
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
                     <!-- Placeholder boxes for the uploaded certificates -->
-                    <div style="background-color: var(--bg-beige); border: 2px dashed #ccc; padding: 2rem; text-align: center; border-radius: 10px;">
+                    <div class="clickable-cert" onclick="openLightbox('https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&q=80', 'Honours Diploma (HDCA) - Placeholder')" style="background-color: var(--bg-beige); border: 2px dashed #ccc; padding: 2rem; text-align: center; border-radius: 10px;">
                         <i class="fas fa-image" style="font-size: 4rem; color: #aaa; margin-bottom: 1rem;"></i>
                         <h4>Honours Diploma (HDCA)</h4>
                         <p style="font-size: 0.9rem; color: #666;">(Replace with image)</p>
                     </div>
-                    <div style="background-color: var(--bg-beige); border: 2px dashed #ccc; padding: 2rem; text-align: center; border-radius: 10px;">
+                    <div class="clickable-cert" onclick="openLightbox('https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&q=80', 'HCL GUVI Hackathon - Placeholder')" style="background-color: var(--bg-beige); border: 2px dashed #ccc; padding: 2rem; text-align: center; border-radius: 10px;">
                         <i class="fas fa-image" style="font-size: 4rem; color: #aaa; margin-bottom: 1rem;"></i>
                         <h4>HCL GUVI Hackathon</h4>
                         <p style="font-size: 0.9rem; color: #666;">(Replace with image)</p>
                     </div>
-                    <div style="background-color: var(--bg-beige); border: 2px dashed #ccc; padding: 2rem; text-align: center; border-radius: 10px;">
+                    <div class="clickable-cert" onclick="openLightbox('https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&q=80', 'Athletics 1500m Merit - Placeholder')" style="background-color: var(--bg-beige); border: 2px dashed #ccc; padding: 2rem; text-align: center; border-radius: 10px;">
                         <i class="fas fa-trophy" style="font-size: 4rem; color: #aaa; margin-bottom: 1rem;"></i>
                         <h4>Athletics (1500m) Merit</h4>
                         <p style="font-size: 0.9rem; color: #666;">(Replace with image)</p>
                     </div>
                 </div>
+            </div>
+            
+            <!-- Lightbox Modal -->
+            <div id="lightbox" class="lightbox-modal">
+                <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+                <img class="lightbox-content" id="lightbox-img">
+                <div id="lightbox-caption"></div>
             </div>
 
         </div>
@@ -352,6 +359,17 @@
     <!-- Simple Scroll Reveal JS -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
+        // Lightbox functionality
+        function openLightbox(imgSrc, caption) {
+            document.getElementById("lightbox").style.display = "block";
+            document.getElementById("lightbox-img").src = imgSrc;
+            document.getElementById("lightbox-caption").innerHTML = caption;
+        }
+        function closeLightbox() {
+            document.getElementById("lightbox").style.display = "none";
+        }
+
+        // ScrollReveal animations
         ScrollReveal().reveal('.hero-text', { distance: '80px', duration: 1200, origin: 'bottom' });
         ScrollReveal().reveal('.visual-img-container', { scale: 0.8, duration: 1500, delay: 200 });
         ScrollReveal().reveal('.text-block-large', { distance: '50px', duration: 1000, origin: 'left' });
