@@ -183,7 +183,7 @@
                     </ul>
                 </div>
                 <div class="project-imagery">
-                    <img src="https://images.unsplash.com/photo-1530497610245-94d3c16cda28?w=800&q=80" alt="Hospital Tech Concept" class="img-main">
+                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80" alt="Hospital Tech Concept" class="img-main">
                     <img src="https://images.unsplash.com/photo-1512314889357-e157c22f938d?w=600&q=80" alt="Notes and code" class="img-offset">
                 </div>
             </div>
@@ -232,30 +232,70 @@
             <h2 class="serif" style="font-size: 3.5rem; margin-bottom: 2rem;">Technical Expertise</h2>
             <p style="font-size: 1.2rem; margin-bottom: 4rem; color: #555;">A comprehensive overview of my programming, design, and technical proficiencies.</p>
             
-            <div class="skills-cluster">
+            <div class="skills-grid-3d">
                 <!-- Programming -->
-                <div class="skill-bubble bubble-dark">Python (Advanced)</div>
-                <div class="skill-bubble bubble-dark">C & C++</div>
-                <div class="skill-bubble bubble-dark">Java</div>
-                <div class="skill-bubble bubble-dark">JavaScript</div>
-                
-                <!-- Web Dev & DB -->
-                <div class="skill-bubble">HTML5 & CSS3</div>
-                <div class="skill-bubble">Bootstrap</div>
-                <div class="skill-bubble">PHP</div>
-                <div class="skill-bubble">MySQL & SQL</div>
-                
+                <div class="skill-card-3d">
+                    <div class="skill-card-inner">
+                        <div class="skill-card-front">
+                            <i class="fas fa-laptop-code"></i>
+                            <h4 class="serif">Programming</h4>
+                        </div>
+                        <div class="skill-card-back">
+                            <p>Python (Advanced)</p>
+                            <p>C & C++</p>
+                            <p>Java</p>
+                            <p>JavaScript</p>
+                            <p>PHP</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web & Database -->
+                <div class="skill-card-3d">
+                    <div class="skill-card-inner">
+                        <div class="skill-card-front">
+                            <i class="fas fa-globe"></i>
+                            <h4 class="serif">Web & Database</h4>
+                        </div>
+                        <div class="skill-card-back">
+                            <p>HTML5 & CSS3</p>
+                            <p>Bootstrap</p>
+                            <p>MySQL & SQL</p>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- AI & Cloud -->
-                <div class="skill-bubble bubble-orange">Artificial Intelligence</div>
-                <div class="skill-bubble bubble-orange">Machine Learning</div>
-                <div class="skill-bubble bubble-orange">Oracle Cloud Infrastructure</div>
-                
+                <div class="skill-card-3d">
+                    <div class="skill-card-inner">
+                        <div class="skill-card-front" style="border-bottom: 5px solid var(--burnt-orange);">
+                            <i class="fas fa-brain"></i>
+                            <h4 class="serif">AI & Cloud</h4>
+                        </div>
+                        <div class="skill-card-back" style="background: linear-gradient(145deg, #d46337, var(--burnt-orange));">
+                            <p>Artificial Intelligence</p>
+                            <p>Machine Learning</p>
+                            <p>Oracle Cloud Infrastructure</p>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- UI/UX & Tools -->
-                <div class="skill-bubble">UI/UX Design</div>
-                <div class="skill-bubble">Figma & Canva</div>
-                <div class="skill-bubble">Wireframing</div>
-                <div class="skill-bubble">Git & GitHub</div>
-                <div class="skill-bubble">VS Code</div>
+                <div class="skill-card-3d">
+                    <div class="skill-card-inner">
+                        <div class="skill-card-front">
+                            <i class="fas fa-tools"></i>
+                            <h4 class="serif">Design & Tools</h4>
+                        </div>
+                        <div class="skill-card-back">
+                            <p>UI/UX Design</p>
+                            <p>Figma & Canva</p>
+                            <p>Wireframing</p>
+                            <p>Git & GitHub</p>
+                            <p>VS Code</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -303,10 +343,10 @@
                         <h4>HCL GUVI Hackathon</h4>
                         <p style="font-size: 0.9rem; color: #666;">(Replace with image)</p>
                     </div>
-                    <div class="clickable-cert" onclick="openLightbox('https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&q=80', 'Athletics 1500m Merit - Placeholder')" style="background-color: var(--bg-beige); border: 2px dashed #ccc; padding: 2rem; text-align: center; border-radius: 10px;">
+                    <div class="clickable-cert" onclick="openLightbox('sports.jpg', 'Athletics (1500m) Merit - 3rd Position')" style="background-color: var(--bg-beige); border: 2px dashed #ccc; padding: 2rem; text-align: center; border-radius: 10px;">
                         <i class="fas fa-trophy" style="font-size: 4rem; color: #aaa; margin-bottom: 1rem;"></i>
                         <h4>Athletics (1500m) Merit</h4>
-                        <p style="font-size: 0.9rem; color: #666;">(Replace with image)</p>
+                        <p style="font-size: 0.9rem; color: #666;">(Click to view certificate)</p>
                     </div>
                 </div>
             </div>
@@ -376,7 +416,7 @@
         ScrollReveal().reveal('.project-info, .cert-card', { distance: '50px', duration: 1000, origin: 'bottom', interval: 200 });
         ScrollReveal().reveal('.project-imagery', { distance: '80px', duration: 1200, origin: 'right', delay: 200 });
         ScrollReveal().reveal('.timeline-event', { distance: '50px', duration: 1000, origin: 'left', interval: 200 });
-        ScrollReveal().reveal('.skill-bubble', { scale: 0.8, duration: 800, interval: 100 });
+        ScrollReveal().reveal('.skill-card-3d', { scale: 0.9, duration: 1000, interval: 150 });
     </script>
 </body>
 </html>
