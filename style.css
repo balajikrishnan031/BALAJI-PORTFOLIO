@@ -87,11 +87,11 @@ nav {
     font-family: var(--font-head);
     font-size: 15vw;
     line-height: 0.8;
-    color: transparent;
-    -webkit-text-stroke: 1.5px var(--mustard-yellow);
+    color: rgba(236, 169, 42, 0.1);
+    -webkit-text-stroke: 3px rgba(236, 169, 42, 0.5);
     z-index: -1;
     right: -5%; top: 20%;
-    opacity: 0.6;
+    opacity: 1;
 }
 .hero-content {
     display: flex;
@@ -121,6 +121,11 @@ nav {
     right: 0; bottom: 0;
     box-shadow: var(--shadow-deep);
 }
+@keyframes float {
+    0% { transform: translateY(0px) rotate(-3deg); }
+    50% { transform: translateY(-20px) rotate(-1deg); }
+    100% { transform: translateY(0px) rotate(-3deg); }
+}
 .visual-img-container {
     position: relative;
     width: 380px; height: 500px;
@@ -129,7 +134,8 @@ nav {
     box-shadow: var(--shadow-deep);
     padding: 15px;
     transform: rotate(-3deg);
-    transition: transform 0.5s ease;
+    transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation: float 6s ease-in-out infinite;
 }
 .visual-img-container:hover { transform: rotate(0deg); }
 .visual-img-container img { width: 100%; height: 100%; object-fit: cover; }
@@ -190,6 +196,11 @@ nav {
     border-radius: 0 20px 20px 20px;
     font-size: 1.1rem;
     color: #444;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.timeline-event:hover .event-details {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-deep);
 }
 
 /* --- Projects Showcase --- */
@@ -251,7 +262,7 @@ nav {
     font-size: 1.1rem;
     font-weight: 600;
     box-shadow: var(--shadow-soft);
-    transition: transform 0.3s ease;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
 }
 .skill-bubble:hover { transform: scale(1.05); box-shadow: var(--shadow-deep); }
 .bubble-dark { background-color: var(--black); color: var(--white); }
@@ -269,6 +280,11 @@ nav {
     box-shadow: var(--shadow-soft);
     text-align: left;
     border-top: 5px solid var(--dark-green);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.cert-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-deep);
 }
 .cert-card h4 { font-size: 1.8rem; margin-bottom: 1rem; }
 .cert-card p { font-size: 1.05rem; color: #555; }
