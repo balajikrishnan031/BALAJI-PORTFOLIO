@@ -32,16 +32,16 @@ body {
     overflow-x: hidden;
 }
 
-/* Background image overlay in natural landscape layout with 75% transparency (25% opacity) and no cropping */
+/* Background image overlay stretched to fit fully with 20% opacity */
 body::before {
     content: '';
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
     background-image: url('Shifting symbol 🤍.jpg');
-    background-size: contain;
+    background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.25; /* 75% transparent */
+    opacity: 0.2; /* 20% opacity */
     z-index: -2;
     pointer-events: none;
 }
