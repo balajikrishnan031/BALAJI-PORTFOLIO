@@ -32,7 +32,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Background image overlay with cover scaling and 35% opacity for readability */
+/* Background image overlay with cover scaling and 20% opacity for readability */
 body::before {
     content: '';
     position: fixed;
@@ -41,7 +41,7 @@ body::before {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.35; /* Faded to 35% opacity to make text fully readable */
+    opacity: 0.2; /* Faded to 20% opacity to make text fully readable */
     z-index: -2;
     pointer-events: none;
 }
@@ -114,8 +114,8 @@ a { text-decoration: none; color: inherit; }
 /* --- Cursive & Sizing Typography Accent --- */
 .cursive-accent {
     font-family: var(--font-cursive);
-    font-size: 2.6rem;
-    color: #BF360C; /* Darker, high-contrast rust orange */
+    font-size: 2.8rem; /* Increased size by another size step */
+    color: var(--burnt-orange); /* Changed back to orange */
     font-weight: 700;
     display: inline-block;
     margin-bottom: 0.5rem;
