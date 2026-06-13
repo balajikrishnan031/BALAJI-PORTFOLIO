@@ -4,7 +4,7 @@
     --bg-beige: #F4EFE5;
     --dark-green: #2B402D;
     --mustard-yellow: #ECA92A;
-    --burnt-orange: #E16847;
+    --burnt-orange: #FF5225; /* Improved, more vibrant Sunset Orange */
     --black: #111111;
     --white: #FFFFFF;
     --light-gray: #E0E0E0;
@@ -25,23 +25,23 @@
 
 body {
     position: relative;
-    background-image: url('Shifting symbol 🤍.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-color: var(--bg-beige);
     color: var(--text-dark);
     font-family: var(--font-body);
     line-height: 1.8;
     overflow-x: hidden;
 }
 
-/* Base Color Blended Overlay on top of the Background Image */
+/* Background image overlay container with 75% transparency (25% opacity) and cover layout */
 body::before {
     content: '';
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: linear-gradient(135deg, rgba(244, 239, 229, 0.88), rgba(43, 64, 45, 0.35));
+    background-image: url('Shifting symbol 🤍.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.25; /* 75% transparent */
     z-index: -2;
     pointer-events: none;
 }
@@ -203,7 +203,7 @@ nav {
 .visual-bg-block {
     position: absolute;
     width: 80%; height: 85%;
-    background-color: var(--dark-green);
+    background-color: var(--burnt-orange);
     right: 0; bottom: 0;
     box-shadow: var(--shadow-deep);
     border-radius: 24px;
@@ -549,3 +549,14 @@ footer h2 { font-size: 4rem; margin-bottom: 1rem; color: var(--mustard-yellow); 
 }
 .clickable-cert { cursor: pointer; transition: transform 0.3s ease; }
 .clickable-cert:hover { transform: scale(1.02); }
+
+/* --- Green Glass Panel for Future Works Project --- */
+.green-glass-panel {
+    background: rgba(43, 64, 45, 0.75) !important; /* Green with 75% opacity */
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-radius: 24px;
+    padding: 3rem;
+    box-shadow: var(--shadow-deep);
+}
