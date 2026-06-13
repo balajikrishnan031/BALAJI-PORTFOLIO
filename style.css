@@ -32,7 +32,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Background image overlay stretched to fit fully with 20% opacity */
+/* Background image overlay stretched to fit fully with no transparency (100% opacity) */
 body::before {
     content: '';
     position: fixed;
@@ -41,7 +41,7 @@ body::before {
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.2; /* 20% opacity */
+    opacity: 1.0; /* 100% opacity, no transparency */
     z-index: -2;
     pointer-events: none;
 }
