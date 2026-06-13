@@ -175,8 +175,8 @@ nav {
     font-family: var(--font-head);
     font-size: 12vw; /* Reduced size from 15vw to 12vw */
     line-height: 0.8;
-    color: rgba(255, 82, 37, 0.01); /* Increased transparency for fill */
-    -webkit-text-stroke: 2px rgba(255, 82, 37, 0.35); /* Increased transparency for stroke (35% opacity) */
+    color: rgba(255, 82, 37, 0.12); /* Light orange fill (12% opacity) */
+    -webkit-text-stroke: 2.5px rgba(255, 82, 37, 0.5); /* Stronger, 50% opacity orange outline */
     z-index: -1;
     right: 8%; /* Shifted left from -5% to 8% to be visible */
     top: 20%;
