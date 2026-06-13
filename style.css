@@ -175,7 +175,7 @@ nav {
     font-size: 12vw; /* Reduced size from 15vw to 12vw */
     line-height: 0.8;
     color: transparent; /* No fill color (transparent inside) */
-    -webkit-text-stroke: 2px rgba(141, 122, 104, 0.28); /* Warm sepia-charcoal outline matching the vintage background lines */
+    -webkit-text-stroke: 2.5px var(--dark-green); /* High-visibility solid brand Dark Green outline */
     z-index: -1;
     right: 8%; /* Shifted left from -5% to 8% to be visible */
     top: 20%;
