@@ -114,8 +114,9 @@ a { text-decoration: none; color: inherit; }
 /* --- Cursive & Sizing Typography Accent --- */
 .cursive-accent {
     font-family: var(--font-cursive);
-    font-size: 2.2rem;
-    color: var(--burnt-orange);
+    font-size: 2.6rem;
+    color: #BF360C; /* Darker, high-contrast rust orange */
+    font-weight: 700;
     display: inline-block;
     margin-bottom: 0.5rem;
 }
