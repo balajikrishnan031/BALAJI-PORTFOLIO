@@ -32,7 +32,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Background image overlay with cover scaling and 85% opacity */
+/* Background image overlay with cover scaling and 75% opacity */
 body::before {
     content: '';
     position: fixed;
@@ -41,7 +41,7 @@ body::before {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.85; /* 85% opacity */
+    opacity: 0.75; /* 75% opacity */
     z-index: -2;
     pointer-events: none;
 }
