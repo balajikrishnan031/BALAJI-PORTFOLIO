@@ -175,7 +175,7 @@ nav {
     font-size: 12vw; /* Reduced size from 15vw to 12vw */
     line-height: 0.8;
     color: transparent; /* No fill color (transparent inside) */
-    -webkit-text-stroke: 2.5px var(--burnt-orange); /* Bright, strong outline in Sunset Orange */
+    -webkit-text-stroke: 2.5px rgba(17, 17, 17, 0.5); /* 50% opacity black outline */
     z-index: -1;
     right: 8%; /* Shifted left from -5% to 8% to be visible */
     top: 20%;
