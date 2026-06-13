@@ -158,7 +158,8 @@ nav {
     transition: all 0.3s ease;
 }
 .logo { font-family: var(--font-head); font-size: 2rem; display: flex; align-items: center; gap: 10px; }
-.nav-links { display: flex; gap: 3rem; list-style: none; font-weight: 500; }
+.nav-links { display: flex; gap: 3rem; list-style: none; font-weight: 600; font-size: 1.15rem; }
+.nav-links a { color: #111; transition: color 0.3s; }
 .nav-links a:hover { color: var(--burnt-orange); }
 
 /* --- Hero Section --- */
@@ -189,10 +190,11 @@ nav {
 }
 .hero-text { flex: 1; }
 .hero-text .intro-para {
-    font-size: 1.35rem; /* Increased size for readability */
+    font-size: 1.45rem; /* Increased from 1.35rem */
     max-width: 550px;
     margin-bottom: 3rem;
-    color: #333;
+    color: #111; /* Darker than #333 */
+    font-weight: 400;
 }
 
 .hero-visual {
@@ -255,7 +257,13 @@ nav {
     margin: 0 auto;
     border-left: 10px solid var(--mustard-yellow);
 }
-.text-block-large p { font-size: 1.3rem; color: #222; margin-bottom: 1.5rem; }
+.text-block-large p { font-size: 1.4rem; color: #111; margin-bottom: 1.5rem; }
+.text-block-large ul li {
+    font-size: 1.25rem;
+    color: #111;
+    font-weight: 500;
+    margin-bottom: 0.6rem;
+}
 
 /* --- Experience & Education Timeline --- */
 .timeline-container {
@@ -283,7 +291,7 @@ nav {
 }
 .event-date { font-family: var(--font-head); font-size: 2.5rem; color: var(--burnt-orange); line-height: 1; margin-bottom: 1rem;}
 .event-title { font-size: 1.8rem; font-weight: 600; color: var(--dark-green); margin-bottom: 0.5rem; }
-.event-subtitle { font-size: 1.1rem; font-weight: 500; color: #444; margin-bottom: 1.5rem; }
+.event-subtitle { font-size: 1.2rem; font-weight: 600; color: #222; margin-bottom: 1.5rem; }
 .event-details {
     background: rgba(255, 255, 255, 0.45);
     backdrop-filter: blur(10px);
@@ -292,8 +300,8 @@ nav {
     padding: 2.5rem;
     box-shadow: var(--shadow-soft);
     border-radius: 0 24px 24px 24px;
-    font-size: 1.1rem;
-    color: #222;
+    font-size: 1.2rem;
+    color: #111;
     transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), background-color 0.4s, border-color 0.4s;
 }
 .timeline-event:hover .event-details {
@@ -355,8 +363,9 @@ nav {
     margin-top: 2rem;
 }
 .spotlight-features li {
-    font-size: 1.1rem; margin-bottom: 1rem;
+    font-size: 1.2rem; margin-bottom: 1rem;
     display: flex; align-items: flex-start; gap: 15px;
+    color: #111;
 }
 .spotlight-features li::before { content: '✦'; color: var(--burnt-orange); }
 
@@ -378,11 +387,12 @@ nav {
 
 .project-info { flex: 1; }
 .project-info h3 { font-size: 3.5rem; margin-bottom: 1.5rem; line-height: 1.1; }
-.project-info p { font-size: 1.15rem; opacity: 0.95; margin-bottom: 2rem; }
+.project-info p { font-size: 1.25rem; opacity: 1; margin-bottom: 2rem; color: rgba(255, 255, 255, 0.95); }
 .project-features { list-style: none; margin-bottom: 2rem; }
 .project-features li {
-    font-size: 1.1rem; margin-bottom: 1rem;
+    font-size: 1.2rem; margin-bottom: 1rem;
     display: flex; align-items: flex-start; gap: 15px;
+    color: rgba(255, 255, 255, 0.95);
 }
 .project-features li::before { content: '✦'; color: var(--mustard-yellow); }
 
@@ -468,9 +478,10 @@ nav {
     border: 1px solid rgba(255,255,255,0.15);
 }
 .skill-card-back p {
-    font-size: 1.05rem;
-    margin: 0.3rem 0;
+    font-size: 1.15rem;
+    margin: 0.4rem 0;
     font-family: var(--font-body);
+    font-weight: 500;
 }
 
 /* --- Certifications Detail --- */
@@ -498,7 +509,8 @@ nav {
     box-shadow: var(--shadow-deep);
 }
 .cert-card h4 { font-size: 1.8rem; margin-bottom: 1rem; }
-.cert-card p { font-size: 1.05rem; color: #333; }
+.cert-card p { font-size: 1.15rem; color: #111; }
+.cert-card p.cert-sub { color: var(--burnt-orange); font-weight: 600; margin-bottom: 1rem; }
 
 /* --- Footer --- */
 footer {
