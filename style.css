@@ -175,7 +175,7 @@ nav {
     font-size: 12vw; /* Reduced size from 15vw to 12vw */
     line-height: 0.8;
     color: transparent; /* No fill color (transparent inside) */
-    -webkit-text-stroke: 2px rgba(43, 64, 45, 0.22); /* Soft brand-green outline, blending perfectly with the background */
+    -webkit-text-stroke: 2.2px rgba(236, 169, 42, 0.3); /* Elegant soft golden outline, matching sparkle highlights */
     z-index: -1;
     right: 8%; /* Shifted left from -5% to 8% to be visible */
     top: 20%;
