@@ -32,13 +32,13 @@ body {
     overflow-x: hidden;
 }
 
-/* Background image overlay stretched to fit fully with no transparency (100% opacity) */
+/* Background image overlay with cover scaling for high quality and perfect aspect ratio */
 body::before {
     content: '';
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
     background-image: url('Shifting symbol 🤍.jpg');
-    background-size: 100% 100%;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     opacity: 1.0; /* 100% opacity, no transparency */
