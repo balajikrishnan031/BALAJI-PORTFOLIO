@@ -32,7 +32,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Background image overlay with cover scaling for high quality and perfect aspect ratio */
+/* Background image overlay with cover scaling and 35% opacity for readability */
 body::before {
     content: '';
     position: fixed;
@@ -41,7 +41,7 @@ body::before {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 1.0; /* 100% opacity, no transparency */
+    opacity: 0.35; /* Faded to 35% opacity to make text fully readable */
     z-index: -2;
     pointer-events: none;
 }
