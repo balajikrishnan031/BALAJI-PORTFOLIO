@@ -173,10 +173,10 @@ nav {
 .hero-bg-text {
     position: absolute;
     font-family: var(--font-head);
-    font-size: 15vw;
+    font-size: 12vw; /* Reduced size from 15vw to 12vw */
     line-height: 0.8;
-    color: rgba(255, 82, 37, 0.03);
-    -webkit-text-stroke: 2.5px rgba(255, 82, 37, 0.65);
+    color: rgba(255, 82, 37, 0.01); /* Increased transparency for fill */
+    -webkit-text-stroke: 2px rgba(255, 82, 37, 0.35); /* Increased transparency for stroke (35% opacity) */
     z-index: -1;
     right: -5%; top: 20%;
     opacity: 1;
