@@ -32,7 +32,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Background image overlay with cover scaling and 20% opacity for readability */
+/* Background image overlay with cover scaling and 10% opacity for readability */
 body::before {
     content: '';
     position: fixed;
@@ -41,7 +41,7 @@ body::before {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.2; /* Faded to 20% opacity to make text fully readable */
+    opacity: 0.1; /* 10% opacity */
     z-index: -2;
     pointer-events: none;
 }
@@ -200,11 +200,12 @@ nav {
     position: relative;
     height: 600px;
     display: flex; justify-content: center; align-items: center;
+    margin-top: 4rem; /* Shifted down to prevent overlapping the background text */
 }
 .visual-bg-block {
     position: absolute;
     width: 80%; height: 85%;
-    background-color: var(--dark-green);
+    background-color: rgba(43, 64, 45, 0.45); /* Softer green, not too dark */
     right: 0; bottom: 0;
     box-shadow: var(--shadow-deep);
     border-radius: 24px;
