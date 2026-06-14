@@ -158,9 +158,30 @@ nav {
     transition: all 0.3s ease;
 }
 .logo { font-family: var(--font-head); font-size: 2rem; display: flex; align-items: center; gap: 10px; }
-.nav-links { display: flex; gap: 3rem; list-style: none; font-weight: 600; font-size: 1.15rem; }
-.nav-links a { color: #111; transition: color 0.3s; }
-.nav-links a:hover { color: var(--burnt-orange); }
+.nav-links { display: flex; gap: 1.6rem; list-style: none; font-weight: 600; font-size: 1.12rem; align-items: center; }
+.nav-links a {
+    color: #111;
+    transition: color 0.3s ease;
+    position: relative;
+    padding: 0.4rem 0;
+}
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: var(--burnt-orange);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+.nav-links a:hover {
+    color: var(--burnt-orange);
+}
+.nav-links a:hover::after {
+    width: 100%;
+}
 
 /* --- Hero Section --- */
 .hero {
