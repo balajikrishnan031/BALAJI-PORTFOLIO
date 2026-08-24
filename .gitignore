@@ -1,0 +1,11 @@
+*.heic
+*.HEIC
+backup_originals/
+auto_crop.py
+crop_existing.py
+ocr_search.py
+generate_*.py
+test_*.png
+test_*.html
+test_*.md
+final_verify_portfolio.png
