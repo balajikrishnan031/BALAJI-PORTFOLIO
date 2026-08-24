@@ -68,7 +68,7 @@
             <div class="hero-visual">
                 <div class="visual-bg-block"></div>
                 <div class="visual-img-container">
-                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&q=80" alt="Software development workspace depicting code and technology">
+                    <img src="balaji_portrait.jpg" alt="Balaji Parthiban — Computer Science Engineer & AI Developer">
                 </div>
             </div>
         </div>
@@ -751,6 +751,19 @@
         ScrollReveal().reveal('.timeline-event', { distance: '50px', duration: 1000, origin: 'left', interval: 200 });
         ScrollReveal().reveal('.skill-card-3d', { scale: 0.9, duration: 1000, interval: 150 });
         ScrollReveal().reveal('.freelance-form-container', { distance: '50px', duration: 1000, origin: 'right' });
+
+        // Hero Portrait Smooth Parallax on Scroll
+        const heroPortrait = document.querySelector('.visual-img-container');
+        const heroBgBlock = document.querySelector('.visual-bg-block');
+        if (heroPortrait && heroBgBlock) {
+            window.addEventListener('scroll', function() {
+                const scrolled = window.pageYOffset;
+                if (scrolled < 900) {
+                    heroPortrait.style.transform = `translateY(${scrolled * 0.12}px) rotate(${-2 + scrolled * 0.003}deg)`;
+                    heroBgBlock.style.transform = `translateY(${scrolled * 0.06}px)`;
+                }
+            });
+        }
 
         // Freelance form submission via Web3Forms (AJAX)
         const freelanceForm = document.getElementById('freelance-form');

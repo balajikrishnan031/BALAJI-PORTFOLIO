@@ -223,35 +223,57 @@ nav {
     position: relative;
     height: 600px;
     display: flex; justify-content: center; align-items: center;
+    perspective: 1000px;
 }
 .visual-bg-block {
     position: absolute;
-    width: 80%; height: 85%;
-    background-color: rgba(43, 64, 45, 0.45); /* Softer green, not too dark */
+    width: 82%; height: 85%;
+    background: linear-gradient(135deg, rgba(43, 64, 45, 0.5) 0%, rgba(225, 104, 71, 0.25) 100%);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.35);
     right: 0; bottom: 0;
-    box-shadow: var(--shadow-deep);
-    border-radius: 24px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+    border-radius: 28px;
+    transition: all 0.6s ease;
 }
 @keyframes float {
-    0% { transform: translateY(0px) rotate(-3deg); }
-    50% { transform: translateY(-20px) rotate(-1deg); }
-    100% { transform: translateY(0px) rotate(-3deg); }
+    0% { transform: translateY(0px) rotate(-2deg); }
+    50% { transform: translateY(-16px) rotate(-0.5deg); }
+    100% { transform: translateY(0px) rotate(-2deg); }
 }
 .visual-img-container {
     position: relative;
-    width: 380px; height: 500px;
-    background-color: #fff;
+    width: 420px; height: 510px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
     z-index: 2;
-    box-shadow: var(--shadow-deep);
-    padding: 15px;
-    transform: rotate(-3deg);
-    transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.18), 0 0 40px rgba(255, 61, 0, 0.15);
+    padding: 12px;
+    transform: rotate(-2deg);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     animation: float 6s ease-in-out infinite;
-    border-radius: 16px;
-    margin-top: 8rem; /* Shifted down further to prevent overlapping the background text */
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.65);
+    margin-top: 5rem;
 }
-.visual-img-container:hover { transform: rotate(0deg); }
-.visual-img-container img { width: 100%; height: 100%; object-fit: cover; border-radius: 8px; }
+.visual-img-container:hover {
+    transform: rotate(0deg) scale(1.03);
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.22), 0 0 50px rgba(255, 61, 0, 0.25);
+    border-color: var(--burnt-orange);
+}
+.visual-img-container img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+    border-radius: 12px;
+    filter: contrast(1.05) brightness(1.02);
+    transition: filter 0.5s ease;
+}
+.visual-img-container:hover img {
+    filter: contrast(1.08) brightness(1.05);
+}
 
 /* --- Deep Dive Detail Section --- */
 .detail-section {
