@@ -4,7 +4,7 @@
 - **Degree**: B.E. Computer Science & Engineering
 - **Institution**: University College of Engineering, Panruti (Anna University Constituent College)
 - **Batch**: 2023 – 2027
-- **Current Official CGPA**: 8.00 / 10.00 (Strictly enforce 8.00; remove any 9.2 references)
+- **Current Official CGPA**: 8.34 / 10.00 (Strictly enforce 8.34; remove any older 8.00 or 9.2 references)
 
 ## Schooling Background
 - **Classes 6–7**: Government School
