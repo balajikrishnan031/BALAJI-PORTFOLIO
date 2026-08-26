@@ -20,6 +20,7 @@
 - **SHIFTER**: Next.js 15 Full-Stack File Engine & Compressor
 - **Keffi AI**: NIRAL AI Mental Health Support Platform (Presented at Naan Mudhalvan Niral Thiruvizha, UCE Panruti)
 - **DocMind AI**: Intelligent Document Organizer (Python, EasyOCR, NLP, ML - CodeBind Internship)
+- **Hospital Appointment Booking Agent for Elderly People**: HCL GUVI Hackathon Winning UI/UX Project (Figma, HTML5, CSS3 - Reduced task flow depth from 5 to 3 taps)
 - **AI Movie Recommendation System**: Machine Learning recommendation engine
 - **Student Management System**: HTML, CSS, PHP, MySQL platform
 
@@ -31,7 +32,7 @@
 
 ## Achievements & Sports (User Preferred Terms)
 - **Athletics (1500m)**: District Winner (3rd Place, Cuddalore Revenue District Sports Competition 2022–23)
-- **HCL GUVI Engineering Hackathon 2025**: Landmark Win / National Level Hackathon (Certificate of Appreciation)
+- **HCL GUVI Engineering Hackathon 2025**: Landmark Win / National Level UI/UX Design Competition (Certificate of Appreciation - Winning Project: Hospital Appointment Booking Agent)
 
 ## Career Direction & Preferences
 - **Preferences**: Open to jobs generally. Government technical/software jobs preferred if available; private software engineering/AI/ML/cloud roles fully acceptable.
